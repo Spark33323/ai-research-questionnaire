@@ -1,0 +1,17 @@
+{
+  "name": "ai-research-questionnaire",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Always-on anonymous academic research questionnaire",
+  "scripts": {
+    "dev": "./bin/wrangler-run.sh dev --local --port 8789 --var ADMIN_TOKEN:local-preview",
+    "dev:node": "node server.js",
+    "check": "./bin/wrangler-run.sh deploy --dry-run --outdir .wrangler/dry-run",
+    "d1:migrate:local": "./bin/wrangler-run.sh d1 migrations apply ai-research-questionnaire --local",
+    "d1:migrate:remote": "./bin/wrangler-run.sh d1 migrations apply ai-research-questionnaire --remote",
+    "deploy": "./bin/wrangler-run.sh deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.50.0"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.playwright-cli/
+.dev.vars
+.DS_Store
+data/
+bin/cloudflared
+bin/cloudflared.tgz
