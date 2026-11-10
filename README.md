@@ -8,6 +8,9 @@ Cloudflare is used only to host the page and its database. It is not an external
 and no respondent account or personal identifier is required. The original local Node/SQLite app
 is retained as an offline development and recovery path.
 
+**Production:** [ai-research-questionnaire on GitHub](https://github.com/Spark33323/ai-research-questionnaire)
+· [live questionnaire](https://ai-research-questionnaire.spark33323-questionnaire.workers.dev/)
+
 ---
 
 ## 1. Deploy the always-on version
