@@ -3,6 +3,8 @@
   "name": "ai-research-questionnaire",
   "main": "worker.js",
   "compatibility_date": "2026-11-10",
+  "workers_dev": true,
+  "preview_urls": false,
   "assets": {
     "directory": "./public",
     "not_found_handling": "none"
@@ -11,7 +13,7 @@
     {
       "binding": "DB",
       "database_name": "ai-research-questionnaire",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "223240ca-8feb-4883-a00a-81b334f0ef9d",
       "migrations_dir": "migrations"
     }
   ],

@@ -11,7 +11,7 @@ if [ ! -x node_modules/.bin/wrangler ]; then
   npm install
 fi
 
-if ! node_modules/.bin/wrangler whoami 2>/dev/null | grep -q "Account Name"; then
+if [ -z "${CLOUDFLARE_API_TOKEN:-}" ] && ! node_modules/.bin/wrangler whoami 2>/dev/null | grep -q "Account Name"; then
   echo "Cloudflare is not authorized yet. Run ./cloudflare-login.sh first."
   exit 1
 fi
